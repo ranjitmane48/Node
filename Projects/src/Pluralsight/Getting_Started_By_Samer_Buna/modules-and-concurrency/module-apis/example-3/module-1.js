@@ -1,0 +1,1 @@
+module.exports = name => ` Hi! My name is ${name}`;
