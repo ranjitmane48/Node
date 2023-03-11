@@ -11,3 +11,5 @@ const obj = convertArrayToObject([
     [3, 'Three'],
     [4, 'Four']
 ]);
+
+//node --inspect-brk hello-world.js
