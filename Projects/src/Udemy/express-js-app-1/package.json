@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon body-parser-server.js"
+    "start": "nodemon server/body-parser-server.js"
   },
   "author": "",
   "license": "ISC",
