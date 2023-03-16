@@ -9,7 +9,6 @@ const router = express.Router();
 // });
 
 router.get('/', (req,res) => {
-    console.log('current __dirname is ' + __dirname);
     res.sendFile(path.join(rootDir, '..', 'views', 'shop.html'));
 });
 
