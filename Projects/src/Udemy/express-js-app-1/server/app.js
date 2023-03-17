@@ -6,6 +6,7 @@ const app = express();
 const path = require("path");
 
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.static(path.join(__dirname, "..", "public")));
 
 app.use("/admin", adminRoutes);
 app.use("/shop", shopRoutes);
@@ -20,5 +21,6 @@ app.use((req, res, next) => {
 });
 
 app.listen(3000, () => {
+  console.log("dirname " + __dirname);
   console.log(`server is listening on port : ${3000}`);
 });
